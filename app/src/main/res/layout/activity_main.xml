@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#454545"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/merienda_one"
+        android:text="@string/logo"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <EditText
+        android:id="@+id/user_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:fontFamily="@font/merienda_one"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/hintUserField"
+        android:textColor="@color/textcolor"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        tools:layout_editor_absoluteX="100dp" />
+
+    <Button
+        android:id="@+id/mainButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="130sp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/lightgrey"
+        android:fontFamily="@font/merienda_one"
+        android:text="@string/mainbutton"
+        app:backgroundTint="#989696"
+        app:layout_constraintTop_toBottomOf="@+id/user_field"
+        tools:layout_editor_absoluteX="158dp" />
+
+    <TextView
+        android:id="@+id/resultinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/merienda_one"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="25sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
